@@ -22,6 +22,7 @@ To create a feature branch make sure you are standing in develop.
 
 ```
 git checkout develop
+git pull origin
 git checkout -b feature/<my-new-feature>
 ```
 To share the branch with others on the team push the branch to Github.
@@ -33,8 +34,10 @@ git push -u feature/<my-new-feature>
 
 ```
 git checkout develop
+git pull origin
 git merge --no-ff -m "Merging my feature into develop"
 git branch -d feature/<my-new-feature>
+git push origin
 ```
 If you have shared the branch by pushing it to Github, remember to delete it.
 ```
