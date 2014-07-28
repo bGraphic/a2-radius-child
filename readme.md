@@ -9,6 +9,7 @@ and this theme in you Wordpress themes folder.
 
 ## Development
 * We do all the work in feature branches.
+  * Tiny fixes can be committed on develop.
 * When we are happy with our work we merge it into develop.
 * When we have completed a set of features we create a release by:
   * Merging develop into master.
