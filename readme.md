@@ -10,10 +10,11 @@ and this theme in you Wordpress themes folder.
 ## Development
 * We do all the work in feature branches.
 * When we are happy with our work we merge it into develop.
-* When we have completed a set of features we merge develop into master.
-* Then we update `style.css` with the new version number.
-* Then we create a tag with the same version number.
-* Then we push it all to github.
+* When we have completed a set of features we create a release by:
+  * Merging develop into master.
+  * Updating `style.css` with the new version number.
+  * Creating a tag with the same version number.
+  * Pushing master to Github with tags.
 
 ### Creating a feature branch
 To create a feature branch make sure you are standing in develop.
