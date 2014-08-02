@@ -1,11 +1,11 @@
 # A2 Radius Child Theme
 
-Radius is a Wordpress theme, and this is a child theme depending on it created
+Radius is a Wordpress theme, and this is a child theme depending on it. The child theme is created
 for the company A2.
 
 ## Installation
 Make sure you have both [the Radius theme](https://array.is/themes/radius-wordpress-theme/)
-and this theme in you Wordpress themes folder.
+and this theme in your Wordpress themes folder.
 
 ## Development
 * We do all the work in feature branches.
