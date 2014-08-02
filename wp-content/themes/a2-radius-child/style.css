@@ -13,3 +13,11 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
+.featured-image, .fluid-width-video-wrapper {
+  margin-bottom: 5%;
+}
+
+.portfolio-sidebar {
+  margin-top: 0;
+}
