@@ -70,7 +70,8 @@ class a2_home_portfolio extends WP_Widget {
 
 						$portfolio_list_args = array(
 							'posts_per_page' => $portfolio_item_count,
-							'post_type'      => 'array-portfolio'
+							'post_type'      => 'array-portfolio',
+							'meta_query' => array(array('key' => '_thumbnail_id'))
 						);
 						$portfolio_list_posts = new WP_Query( $portfolio_list_args );
 
