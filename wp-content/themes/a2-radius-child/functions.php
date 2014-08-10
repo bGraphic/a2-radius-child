@@ -1,6 +1,7 @@
 <?php
 
 require( get_stylesheet_directory() . '/includes/widgets/text-column.php' );
+require( get_stylesheet_directory() . '/includes/widgets/homepage-portfolio.php' );
 
 /* Enqueue Scripts and Styles */
 function a2_scripts_styles() {
