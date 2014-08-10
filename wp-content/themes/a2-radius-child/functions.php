@@ -10,6 +10,8 @@ function a2_scripts_styles() {
 
   //Font Awesome CSS
   wp_enqueue_style( 'font-awesome-css-4', get_stylesheet_directory_uri() . "/includes/fonts/font-awesome-4.1.0/css/font-awesome.min.css", array(), $version, 'screen' );
+  //Custom JS
+  wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/includes/js/custom/custom.js', array( 'jquery' ), $version, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'a2_scripts_styles' );
