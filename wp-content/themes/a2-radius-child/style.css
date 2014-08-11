@@ -5,7 +5,7 @@
  Author:       Benedicte Raae & Guri Sogn Andersen
  Author URI:   http://bgraphic.no
  Template:     radius
- Version:      0.1.2
+ Version:      0.1.3
  Text Domain:  a2-radius-child
 */
 
@@ -41,11 +41,6 @@ a:hover .services  {
 
 .single-post .nav-top ul > .current_page_parent > a {
   color: #fff;
-}
-
-.single-post .nav-top ul > li.current_page_parent {
-  position: relative;
-  border: none;
 }
 
 .single-post.desktop #nav > .current_page_parent {
