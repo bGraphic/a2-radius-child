@@ -26,35 +26,15 @@
   color: #666;
 }
 
+.services:hover .service-icon,
 .services .service-icon {
-  color: #90979F;
+  color: #f16e4f;
 }
 
-a .services h3 {
-  text-decoration: underline;
+.services {
+  border: 1px solid #fff;
 }
 
-a .services .service-icon, a .services h3, a .services p {
-   -webkit-transition: .07s ease-in;
-	-moz-transition: .07s ease-in;
-	transition: .07s ease-in;
-}
-
-a .services:hover h3 {
-  text-decoration: none;
-}
-
-a .services:hover p {
-  text-decoration: underline;
-}
-
-a .services:hover .service-icon, a .services:hover h3, a .services:hover p {
-	color: #666;
-	-webkit-transition: .07s ease-in;
-	-moz-transition: .07s ease-in;
-	transition: .07s ease-in;
-}
-
-.services:hover .service-icon {
-  color: #90979F;
+a:hover .services  {
+  border-color: #f16e4f;
 }
