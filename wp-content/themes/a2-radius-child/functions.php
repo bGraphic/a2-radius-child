@@ -2,6 +2,7 @@
 
 require( get_stylesheet_directory() . '/includes/widgets/text-column.php' );
 require( get_stylesheet_directory() . '/includes/widgets/homepage-portfolio.php' );
+require( get_stylesheet_directory() . '/lib/a2-employees.php' );
 
 /* Enqueue Scripts and Styles */
 function a2_scripts_styles() {
@@ -55,3 +56,9 @@ if ( ! function_exists( 'a2_service' ) ) {
   add_action( 'init', 'a2_service', 0 );
 
 }
+
+/* Register employee post-type and related taxonomies and custom fields */
+function a2_employees() {
+  new A2Employees();
+}
+add_action( 'init', 'a2_employees', 0 );
