@@ -38,8 +38,8 @@ get_header(); ?>
 							<div class="portfolio-meta">
 								<h3><?php _e( 'Project Details', 'radius' ); ?></h3>
 								<ul class="portfolio-meta-links">
-							    	<li><span><i class="fa fa-user"></i> <?php the_author_link(); ?></span></li>
-							    	<li><span><i class="fa fa-calendar"></i> <?php echo get_the_date( 'm/d/Y' ); ?></span></li>
+							    	<!-- <li><span><i class="fa fa-user"></i> <?php the_author_link(); ?></span></li> -->
+							    	<li><span class="meta-list"><i class="fa fa-calendar"></i> <?php echo get_the_date(); ?></span></li>
 							    	<?php echo get_the_term_list( $post->ID, 'categories', '<li><i class="fa fa-list"></i> ', ', ', '</li>' ); ?>
 							    </ul>
 							</div><!-- portfolio meta -->
