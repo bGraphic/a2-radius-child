@@ -16,6 +16,7 @@ get_header(); ?>
 								<div class="blog-inside clearfix">
 									<div class="page-title page-title-portfolio">
 										<h1><?php the_title(); ?></h1>
+										<?php the_terms($post->ID, 'a2-service', '', ', ', '') ?>
 									</div>
 
 									<div class="blog-entry">

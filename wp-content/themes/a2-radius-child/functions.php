@@ -15,3 +15,31 @@ function a2_scripts_styles() {
 
 }
 add_action( 'wp_enqueue_scripts', 'a2_scripts_styles' );
+
+/* Add service taxonomy */
+if ( ! function_exists( 'a2_service' ) ) {
+
+// Register Custom Taxonomy
+function a2_service() {
+
+	$labels = array(
+		'name'                       => _x( 'Services', 'Taxonomy General Name', 'a2_radius_child' ),
+		'singular_name'              => _x( 'Service', 'Taxonomy Singular Name', 'a2_radius_child' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'a2-service', array( 'array-portfolio' ), $args );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'a2_service', 0 );
+
+}
