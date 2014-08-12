@@ -15,3 +15,43 @@ function a2_scripts_styles() {
 
 }
 add_action( 'wp_enqueue_scripts', 'a2_scripts_styles' );
+
+/* Add service taxonomy */
+if ( ! function_exists( 'a2_service' ) ) {
+
+  // Register Custom Taxonomy
+  function a2_service() {
+
+  	$labels = array(
+  		'name'                       => _x( 'Services', 'Taxonomy General Name', 'a2_radius_child' ),
+  		'singular_name'              => _x( 'Service', 'Taxonomy Singular Name', 'a2_radius_child' ),
+      'all_items'                  => __( 'All Services', 'a2_radius_child' ),
+      'parent_item'                => __( 'Parent Item', 'a2_radius_child' ),
+      'parent_item_colon'          => __( 'Parent Item:', 'a2_radius_child' ),
+      'new_item_name'              => __( 'New Service Name', 'a2_radius_child' ),
+      'add_new_item'               => __( 'Add New Service', 'a2_radius_child' ),
+      'edit_item'                  => __( 'Edit Service', 'a2_radius_child' ),
+      'update_item'                => __( 'Update Service', 'a2_radius_child' ),
+      'separate_items_with_commas' => __( 'Separate services with commas', 'a2_radius_child' ),
+      'search_items'               => __( 'Search Service', 'a2_radius_child' ),
+      'add_or_remove_items'        => __( 'Add or remove services', 'a2_radius_child' ),
+      'choose_from_most_used'      => __( 'Choose from the most used services', 'a2_radius_child' ),
+      'not_found'                  => __( 'Not Found', 'a2_radius_child' ),
+  	);
+  	$args = array(
+  		'labels'                     => $labels,
+  		'hierarchical'               => true,
+  		'public'                     => true,
+  		'show_ui'                    => true,
+  		'show_admin_column'          => true,
+  		'show_in_nav_menus'          => true,
+  		'show_tagcloud'              => true,
+  	);
+  	register_taxonomy( 'a2-service', array( 'array-portfolio' ), $args );
+
+  }
+
+  // Hook into the 'init' action
+  add_action( 'init', 'a2_service', 0 );
+
+}

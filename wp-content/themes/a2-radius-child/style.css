@@ -18,8 +18,33 @@
   margin-bottom: 5%;
 }
 
+.page .featured-image {
+  margin-bottom: 2%;
+}
+
 .portfolio-sidebar {
   margin-top: 0;
+}
+
+.page-title-portfolio {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: dashed 1px #E6E6E6;
+}
+
+.page-title-portfolio a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.page-title-portfolio a:hover {
+  color: #4c4c4c;
+}
+
+.page-title-portfolio h1 {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .services {
