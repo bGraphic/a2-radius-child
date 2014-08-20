@@ -8,13 +8,20 @@ function a2_scripts_styles() {
 
   $version = wp_get_theme()->Version;
 
-  //Font Awesome CSS
-  wp_enqueue_style( 'font-awesome-css-4', get_stylesheet_directory_uri() . "/includes/fonts/font-awesome-4.1.0/css/font-awesome.min.css", array(), $version, 'screen' );
   //Custom JS
   wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/includes/js/custom/custom.js', array( 'jquery' ), $version, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'a2_scripts_styles' );
+
+
+/* Sort portfolio on last modified */
+function last_modified_portfolio( $query ) {
+    if ( $query->is_post_type_archive('array-portfolio')) {
+        $query->set( 'orderby', 'modified' );
+    }
+}
+add_action( 'pre_get_posts', 'last_modified_portfolio' );
 
 /* Add service taxonomy */
 if ( ! function_exists( 'a2_service' ) ) {
