@@ -81,3 +81,91 @@ add_image_size( 'portfolio-logo-thumb', 320, 320, false ); // Portfolio page thu
 add_image_size( 'portfolio-employee', 620, 0, true ); // Portfolio page thumb
 add_image_size( 'portfolio-photo', 620, 0, false ); // Portfolio page thumb
 add_image_size( 'portfolio-logo', 620, 0, false ); // Portfolio page thumb
+
+if( function_exists('register_field_group') ):
+
+register_field_group(array (
+	'key' => 'group_53f4f62b2ccbc',
+	'title' => 'Portfolio image',
+	'fields' => array (
+		array (
+			'key' => 'field_53f4f6f496f09',
+			'label' => 'Type of image',
+			'name' => 'image_type',
+			'prefix' => '',
+			'type' => 'radio',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'choices' => array (
+				'logo' => 'Logo',
+				'photo' => 'Photo',
+			),
+			'other_choice' => 0,
+			'save_other_choice' => 0,
+			'default_value' => 'logo',
+			'layout' => 'vertical',
+		),
+		array (
+			'key' => 'field_53f4f71d96f0a',
+			'label' => 'Logo',
+			'name' => 'logo',
+			'prefix' => '',
+			'type' => 'image',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array (
+				array (
+					array (
+						'field' => 'field_53f4f6f496f09',
+						'operator' => '==',
+						'value' => 'logo',
+					),
+				),
+			),
+			'return_format' => 'array',
+			'preview_size' => 'portfolio-logo-thumb',
+			'library' => 'all',
+		),
+		array (
+			'key' => 'field_53f4f7b496f0b',
+			'label' => 'Photo',
+			'name' => 'photo',
+			'prefix' => '',
+			'type' => 'image',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array (
+				array (
+					array (
+						'field' => 'field_53f4f6f496f09',
+						'operator' => '==',
+						'value' => 'photo',
+					),
+				),
+			),
+			'return_format' => 'array',
+			'preview_size' => 'portfolio-photo-thumb',
+			'library' => 'all',
+		),
+	),
+	'location' => array (
+		array (
+			array (
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'array-portfolio',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'acf_after_title',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => array (
+		0 => 'featured_image',
+	),
+));
+
+endif;
