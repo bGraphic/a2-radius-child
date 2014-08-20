@@ -20,6 +20,7 @@ form {
 
 .contact-form input, .contact-form textarea {
   width: 100%;
+  max-width: auto;
   padding: 2%;
   font-size: 105%;
   margin-top: 0.5em;

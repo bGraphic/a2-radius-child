@@ -3,6 +3,12 @@
 require( get_stylesheet_directory() . '/includes/widgets/text-column.php' );
 require( get_stylesheet_directory() . '/includes/widgets/homepage-portfolio.php' );
 
+function remove_grunion_style() {
+  wp_dequeue_style('grunion.css');
+  wp_deregister_style('grunion.css');
+}
+add_action('wp_print_styles', 'remove_grunion_style');
+
 /* Enqueue Scripts and Styles */
 function a2_scripts_styles() {
 
