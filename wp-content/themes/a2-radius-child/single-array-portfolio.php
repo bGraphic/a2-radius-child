@@ -35,9 +35,9 @@ get_header(); ?>
 							<?php if ( get_field('logo') || get_field('photo') ) { ?>
 								<div class="featured-image">
 									<?php if(get_field('image_type') == 'logo'): ?>
-										<img class="logo" src="<?php echo get_field('logo')['sizes']['portfolio-logo']; ?>" alt="<?php echo $photo['alt']; ?>" />
+										<img class="logo" src="<?php $logo = get_field('logo'); echo $logo['sizes']['portfolio-logo-thumb']; ?>" />
 									<?php else : ?>
-										<img src="<?php echo get_field('photo')['sizes']['portfolio-photo']; ?>" alt="<?php echo $photo['alt']; ?>" />
+										<img src="<?php $photo = get_field('photo'); echo $photo['sizes']['portfolio-photo-thumb']; ?>" />
 									<?php endif; ?>
 								</div>
 							<?php } ?>
