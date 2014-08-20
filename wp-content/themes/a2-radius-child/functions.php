@@ -16,6 +16,15 @@ function a2_scripts_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'a2_scripts_styles' );
 
+
+/* Sort portfolio on last modified */
+function last_modified_portfolio( $query ) {
+    if ( $query->is_post_type_archive('array-portfolio')) {
+        $query->set( 'orderby', 'modified' );
+    }
+}
+add_action( 'pre_get_posts', 'last_modified_portfolio' );
+
 /* Add service taxonomy */
 if ( ! function_exists( 'a2_service' ) ) {
 
