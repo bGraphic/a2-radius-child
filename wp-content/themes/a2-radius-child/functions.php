@@ -108,44 +108,15 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_53f4f71d96f0a',
-			'label' => 'Logo',
-			'name' => 'logo',
+			'label' => 'Image',
+			'name' => 'image',
 			'prefix' => '',
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 0,
-			'conditional_logic' => array (
-				array (
-					array (
-						'field' => 'field_53f4f6f496f09',
-						'operator' => '==',
-						'value' => 'logo',
-					),
-				),
-			),
+			'conditional_logic' => 0,
 			'return_format' => 'array',
 			'preview_size' => 'portfolio-logo-thumb',
-			'library' => 'all',
-		),
-		array (
-			'key' => 'field_53f4f7b496f0b',
-			'label' => 'Photo',
-			'name' => 'photo',
-			'prefix' => '',
-			'type' => 'image',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => array (
-				array (
-					array (
-						'field' => 'field_53f4f6f496f09',
-						'operator' => '==',
-						'value' => 'photo',
-					),
-				),
-			),
-			'return_format' => 'array',
-			'preview_size' => 'portfolio-photo-thumb',
 			'library' => 'all',
 		),
 	),
