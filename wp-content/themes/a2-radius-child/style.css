@@ -180,6 +180,7 @@ a:hover .services  {
 
 .a2-portfolio-full {
   margin-right: -2.3%;
+  position: relative;
 }
 
 .a2-portfolio {
@@ -187,10 +188,40 @@ a:hover .services  {
   float: left;
   width: 48%;
   margin: 0 2% 30px 0;
+  background: #fff;
+  padding-bottom: 48%;
+
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 3px;
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 3px;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 3px;
+}
+
+.a2-portfolio.a2-employee  {
+  padding-bottom: 65%;
+}
+
+.a2-portfolio:hover img {
+  opacity: 0.8;
 }
 
 .a2-portfolio img {
   width: 100%;
+}
+
+.a2-portfolio img {
+  position: absolute;
+}
+
+.a2-portfolio img.logo {
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+.featured-image .logo {
+  padding: 20px 10px;
+  background: #fff;
 }
 
 /* Three Column Portfolio */
@@ -203,6 +234,11 @@ a:hover .services  {
   .a2-portfolio {
     width: 31%;
     margin: 0 2.2% 30px 0;
+    padding-bottom: 31%;
+  }
+
+  .a2-portfolio.a2-employee  {
+    padding-bottom: 43%;
   }
 }
 
@@ -216,6 +252,11 @@ a:hover .services  {
   .a2-portfolio {
     width: 23%;
     margin: 0 2% 30px 0;
+    padding-bottom: 23%;
+  }
+
+  .a2-portfolio.a2-employee {
+    padding-bottom: 35%;
   }
 
 }
@@ -233,7 +274,7 @@ a:hover .services  {
   padding: 10px;
   text-align: center;
   background: #fff;
-  width: 100.2%;
+  width: 100%;
 }
 
 .a2-portfolio h4 a {

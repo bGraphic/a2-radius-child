@@ -32,8 +32,14 @@ get_header(); ?>
 						<div class="portfolio-sidebar">
 
 							<!-- Grab the featured image -->
-							<?php if ( has_post_thumbnail() ) { ?>
-								<div class="featured-image"><?php the_post_thumbnail( 'portfolio-image' ); ?></div>
+							<?php if ( get_field('logo') || get_field('photo') ) { ?>
+								<div class="featured-image">
+									<?php if(get_field('image_type') == 'logo'): ?>
+										<img class="logo" src="<?php echo get_field('logo')['sizes']['portfolio-logo']; ?>" alt="<?php echo $photo['alt']; ?>" />
+									<?php else : ?>
+										<img src="<?php echo get_field('photo')['sizes']['portfolio-photo']; ?>" alt="<?php echo $photo['alt']; ?>" />
+									<?php endif; ?>
+								</div>
 							<?php } ?>
 
 							<div class="portfolio-meta">
