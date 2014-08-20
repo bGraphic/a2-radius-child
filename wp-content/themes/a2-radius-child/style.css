@@ -14,6 +14,14 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
+.content p, .content ul, .content ol {
+  margin-bottom: 10px;
+}
+
+.blog-content {
+  margin-bottom: -10px;
+}
+
 form {
   margin: 2em 0;
 }
@@ -28,11 +36,8 @@ label span {
 }
 
 input, textarea {
-  width: 100%;
-  max-width: auto;
   padding: 2%;
   font-size: 105%;
-  margin-top: 0.5em;
 }
 
 input {
@@ -41,6 +46,13 @@ input {
 
 textarea {
   border-color: #E6E6E6;
+}
+
+.contact-form input,
+.contact-form texarea {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0.5em;
 }
 
 input.pushbutton-wide:hover {
@@ -162,4 +174,117 @@ a:hover .services  {
     margin: 0 2% 30px 0;
     padding-bottom: 23%;
   }
+}
+
+/* a2-portfolio */
+
+.meta-list i.fa {
+  margin-right: 0.5em;
+}
+
+.a2-portfolio-full {
+  margin-right: -2.3%;
+  position: relative;
+}
+
+.a2-portfolio {
+  position: relative;
+  float: left;
+  width: 48%;
+  margin: 0 2% 30px 0;
+  background: #fff;
+  padding-bottom: 48%;
+
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 3px;
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 3px;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 3px;
+}
+
+.a2-portfolio.a2-employee  {
+  padding-bottom: 65%;
+}
+
+.a2-portfolio:hover img {
+  opacity: 0.8;
+}
+
+.a2-portfolio img {
+  width: 100%;
+}
+
+.a2-portfolio img {
+  position: absolute;
+}
+
+.a2-portfolio img.logo {
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+.featured-image .logo {
+  padding: 20px 10px;
+  background: #fff;
+}
+
+/* Three Column Portfolio */
+@media screen and (min-width:700px) {
+
+  .a2-portfolio-full {
+    margin-right: -2.5%;
+  }
+
+  .a2-portfolio {
+    width: 31%;
+    margin: 0 2.2% 30px 0;
+    padding-bottom: 31%;
+  }
+
+  .a2-portfolio.a2-employee  {
+    padding-bottom: 43%;
+  }
+}
+
+/* Four Column Portfolio */
+@media screen and (min-width:940px) {
+
+  .a2-portfolio-full {
+    margin-right: -1.9%;
+  }
+
+  .a2-portfolio {
+    width: 23%;
+    margin: 0 2% 30px 0;
+    padding-bottom: 23%;
+  }
+
+  .a2-portfolio.a2-employee {
+    padding-bottom: 35%;
+  }
+
+}
+
+.a2-portfolio h4 {
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  width: 100%;
+}
+
+.a2-portfolio h4 a {
+  color: #666;
+}
+
+.a2-portfolio h4 span {
+  display: block;
 }

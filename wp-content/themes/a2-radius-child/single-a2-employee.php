@@ -16,12 +16,21 @@ get_header(); ?>
 								<div class="blog-inside clearfix">
 									<div class="page-title page-title-portfolio">
 										<h1><?php the_title(); ?></h1>
-										<?php the_terms($post->ID, 'a2-service', '', ', ', '') ?>
+										<?php the_terms($post->ID, 'a2-employee-skill', '', ', ', '') ?>
 									</div>
 
 									<div class="blog-entry">
 										<div class="blog-content">
-											<?php the_content(''); ?>
+											<?php the_field('bio'); ?>
+
+											<?php if(get_field('links')): ?>
+												<ul>
+    											<?php while(the_repeater_field('links')): ?>
+														<li><a href="<?php the_sub_field('url'); ?>" alt="<?php the_sub_field('tag'); ?>"><?php the_sub_field('tag'); ?></a></li>
+    											<?php endwhile; ?>
+												</ul>
+											<?php endif; ?>
+
 										</div><!-- blog content -->
 									</div><!-- blog entry -->
 								</div><!-- blog inside -->
@@ -31,24 +40,29 @@ get_header(); ?>
 						<!-- portfolio meta details -->
 						<div class="portfolio-sidebar">
 
-							<!-- Grab the featured image -->
-							<?php if ( get_field('logo') || get_field('photo') ) { ?>
-								<div class="featured-image">
-									<?php if(get_field('image_type') == 'logo'): ?>
-										<img class="logo" src="<?php echo get_field('logo')['sizes']['portfolio-logo']; ?>" alt="<?php echo $photo['alt']; ?>" />
-									<?php else : ?>
-										<img src="<?php echo get_field('photo')['sizes']['portfolio-photo']; ?>" alt="<?php echo $photo['alt']; ?>" />
-									<?php endif; ?>
-								</div>
-							<?php } ?>
+							<?php
+								$photo = get_field('photo');
+
+								if( !empty($photo) ): ?>
+
+									<div class="featured-image">
+										<img src="<?php echo $photo['sizes']['portfolio-employee-thumb']; ?>" alt="<?php echo $photo['alt']; ?>" />
+									</div>
+
+							<?php endif; ?>
 
 							<div class="portfolio-meta">
-								<h3><?php _e( 'Project Details', 'radius' ); ?></h3>
+								<h3><?php _e( 'Contact Information', 'radius' ); ?></h3>
 								<ul class="portfolio-meta-links">
-							    	<!-- <li><span><i class="fa fa-user"></i> <?php the_author_link(); ?></span></li> -->
-							    	<li><span class="meta-list"><i class="fa fa-calendar"></i> <?php echo get_the_date(); ?></span></li>
-							    	<?php echo get_the_term_list( $post->ID, 'categories', '<li><i class="fa fa-list"></i> ', ', ', '</li>' ); ?>
-							    </ul>
+									<?php
+										if( get_field('phone') ): ?>
+										<li><span class="meta-list"><i class="fa fa-phone"></i> <?php the_field('phone') ?></span></li>
+									<?php endif; ?>
+									<?php
+										if( get_field('email') ): ?>
+										<li><span class="meta-list"><i class="fa fa-envelope"></i> <?php the_field('email') ?></span></li>
+									<?php endif; ?>
+							  </ul>
 							</div><!-- portfolio meta -->
 
 							<ul class="portfolio-sidebar-nav">
