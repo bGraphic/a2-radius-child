@@ -18,7 +18,16 @@ form {
   margin: 2em 0;
 }
 
-.contact-form input, .contact-form textarea {
+label {
+  font-weight: bold;
+}
+
+label span {
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+
+input, textarea {
   width: 100%;
   max-width: auto;
   padding: 2%;
@@ -26,19 +35,19 @@ form {
   margin-top: 0.5em;
 }
 
-.contact-form input {
+input {
   margin-bottom: 2em;
 }
 
-.contact-form textarea {
+textarea {
   border-color: #E6E6E6;
 }
 
-.contact-form input.pushbutton-wide:hover {
+input.pushbutton-wide:hover {
   background-color: #E6E6E6;
 }
 
-.contact-form input.pushbutton-wide {
+input.pushbutton-wide {
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
