@@ -5,7 +5,7 @@
  Author:       Benedicte Raae & Guri Sogn Andersen
  Author URI:   http://bgraphic.no
  Template:     radius
- Version:      0.1.4
+ Version:      0.1.5
  Text Domain:  a2-radius-child
 */
 
@@ -13,6 +13,65 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
+form {
+  margin: 2em 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+label span {
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: auto;
+  padding: 2%;
+  font-size: 105%;
+  margin-top: 0.5em;
+}
+
+input {
+  margin-bottom: 2em;
+}
+
+textarea {
+  border-color: #E6E6E6;
+}
+
+input.pushbutton-wide:hover {
+  background-color: #E6E6E6;
+}
+
+input.pushbutton-wide {
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.page .blog-inside {
+  float: none;
+}
 
 .featured-image, .fluid-width-video-wrapper {
   margin-bottom: 5%;
