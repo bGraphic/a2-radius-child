@@ -36,11 +36,8 @@ label span {
 }
 
 input, textarea {
-  width: 100%;
-  max-width: auto;
   padding: 2%;
   font-size: 105%;
-  margin-top: 0.5em;
 }
 
 input {
@@ -49,6 +46,13 @@ input {
 
 textarea {
   border-color: #E6E6E6;
+}
+
+.contact-form input,
+.contact-form texarea {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0.5em;
 }
 
 input.pushbutton-wide:hover {
