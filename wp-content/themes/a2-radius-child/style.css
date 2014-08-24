@@ -49,7 +49,7 @@ textarea {
 }
 
 .contact-form input,
-.contact-form texarea {
+.contact-form textarea {
   width: 100%;
   max-width: auto;
   margin-top: 0.5em;
