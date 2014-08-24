@@ -18,8 +18,27 @@
   margin-bottom: 10px;
 }
 
+.page-template .blog-post {
+  margin-bottom: 5%;
+}
+
+.blog-content > :last-child,
+.blog-inside > :last-child {
+  margin-bottom: 0;
+}
+
+.blog-inside,
 .blog-content {
-  margin-bottom: -10px;
+  padding-bottom: 4%;
+}
+
+.page .blog-inside,
+.single .blog-inside {
+  float: none;
+}
+
+.content-portfolio .content {
+  margin-bottom: 5%;
 }
 
 form {
@@ -79,10 +98,6 @@ input.pushbutton-wide {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
-}
-
-.page .blog-inside {
-  float: none;
 }
 
 .featured-image, .fluid-width-video-wrapper {
