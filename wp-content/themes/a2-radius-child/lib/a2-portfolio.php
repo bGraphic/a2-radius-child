@@ -33,6 +33,8 @@ class A2Portfolio {
       'show_admin_column'          => true,
       'show_in_nav_menus'          => true,
       'show_tagcloud'              => true,
+      'query_var'           => true,
+      'rewrite'             => array('slug' => 'service'),
     );
     register_taxonomy( 'a2-service', array( 'array-portfolio' ), $args );
   }
@@ -43,11 +45,28 @@ class A2Portfolio {
 
       register_field_group(array (
       	'key' => 'group_53f4f62b2ccbc',
-      	'title' => 'Portfolio image',
+      	'title' => 'Portfolio',
       	'fields' => array (
+          array (
+        		'key' => 'field_53fa3cb1372fd',
+        		'label' => __('Timeframe/Time', 'a2_radius_child'),
+        		'name' => 'timeframe',
+        		'prefix' => '',
+        		'type' => 'text',
+        		'instructions' => '',
+        		'required' => 0,
+        		'conditional_logic' => 0,
+        		'default_value' => '',
+        		'placeholder' => '',
+        		'prepend' => '',
+        		'append' => '',
+        		'maxlength' => '',
+        		'readonly' => 0,
+        		'disabled' => 0,
+        	),
       		array (
       			'key' => 'field_53f4f6f496f09',
-      			'label' => 'Type of image',
+      			'label' => __('Type of image', 'a2_radius_child'),
       			'name' => 'image_type',
       			'prefix' => '',
       			'type' => 'radio',
@@ -65,7 +84,7 @@ class A2Portfolio {
       		),
       		array (
       			'key' => 'field_53f4f71d96f0a',
-      			'label' => 'Image',
+      			'label' => __('Image', 'a2_radius_child'),
       			'name' => 'image',
       			'prefix' => '',
       			'type' => 'image',
