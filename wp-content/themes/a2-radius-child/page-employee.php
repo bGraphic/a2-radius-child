@@ -24,7 +24,12 @@ get_header(); ?>
 
             <div class="a2-portfolio-full clearfix">
                 <?php
-                  $global_posts_query = new WP_Query(array('post_type' => 'a2-employee'));
+                  $global_posts_query = new WP_Query(
+                    array(
+                      'posts_per_page' => -1,
+                      'post_type'      => 'a2-employee'
+                    )
+                  );
                   if ( $global_posts_query->have_posts() ) : while( $global_posts_query->have_posts() ) : $global_posts_query->the_post();
                 ?>
 
