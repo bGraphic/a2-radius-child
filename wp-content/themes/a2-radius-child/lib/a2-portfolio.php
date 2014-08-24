@@ -13,8 +13,8 @@ class A2Portfolio {
       'name'                       => _x( 'Services', 'Taxonomy General Name', 'a2_radius_child' ),
       'singular_name'              => _x( 'Service', 'Taxonomy Singular Name', 'a2_radius_child' ),
       'all_items'                  => __( 'All Services', 'a2_radius_child' ),
-      'parent_item'                => __( 'Parent Item', 'a2_radius_child' ),
-      'parent_item_colon'          => __( 'Parent Item:', 'a2_radius_child' ),
+      'parent_item'                => __( 'Service Parent Item', 'a2_radius_child' ),
+      'parent_item_colon'          => __( 'Service Parent Item:', 'a2_radius_child' ),
       'new_item_name'              => __( 'New Service Name', 'a2_radius_child' ),
       'add_new_item'               => __( 'Add New Service', 'a2_radius_child' ),
       'edit_item'                  => __( 'Edit Service', 'a2_radius_child' ),
@@ -33,10 +33,10 @@ class A2Portfolio {
       'show_admin_column'          => true,
       'show_in_nav_menus'          => true,
       'show_tagcloud'              => true,
-      'query_var'           => true,
-      'rewrite'             => array('slug' => 'service'),
+      'query_var'                  => true,
+      'rewrite'                     => array('slug' => _x('service', 'Service slug', 'a2_radius_child')),
     );
-    register_taxonomy( 'a2-service', array( 'array-portfolio' ), $args );
+    register_taxonomy('a2-service', array( 'array-portfolio' ), $args );
   }
 
   public function register_a2_employee_custom_fields() {

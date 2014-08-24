@@ -12,7 +12,8 @@ class A2Employees {
     		'name'                => _x( 'Employees', 'Post Type General Name', 'a2_radius_child' ),
     		'singular_name'       => _x( 'Employee', 'Post Type Singular Name', 'a2_radius_child' ),
     		'menu_name'           => __( 'Employee', 'a2_radius_child' ),
-    		'parent_item_colon'   => __( '', 'a2_radius_child' ),
+        'parent_item'         => __( 'Employee Parent Item', 'a2_radius_child' ),
+    		'parent_item_colon'   => __( 'Employee Parent Item:', 'a2_radius_child' ),
     		'all_items'           => __( 'All Employees', 'a2_radius_child' ),
     		'view_item'           => __( 'View Employee', 'a2_radius_child' ),
     		'add_new_item'        => __( 'Add New Employee', 'a2_radius_child' ),
@@ -40,7 +41,7 @@ class A2Employees {
     		'exclude_from_search' => false,
     		'publicly_queryable'  => true,
     		'capability_type'     => 'page',
-        'rewrite'             => array('slug' => 'employee'),
+        'rewrite'             => array('slug' => _x('employee', 'Employee slug', 'a2_radius_child')),
     	);
     	register_post_type( 'a2-employee', $args );
   }
@@ -61,7 +62,7 @@ class A2Employees {
       'show_in_nav_menus'   => true,
       'show_tagcloud'       => true,
       'query_var'           => true,
-      'rewrite'             => array('slug' => 'skill'),
+      'rewrite'             => array('slug' => _x('skills', 'Skills slug', 'a2_radius_child')),
     );
 
     register_taxonomy( 'a2-employee-skill', array('a2-employee'), $args);

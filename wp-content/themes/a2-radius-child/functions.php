@@ -32,3 +32,9 @@ function a2_init() {
   new A2Portfolio();
 }
 add_action( 'init', 'a2_init', 0 );
+
+function a2_setup() {
+  /* Make theme available for translation */
+  load_child_theme_textdomain( 'a2_radius_child', get_stylesheet_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'a2_setup' );
