@@ -75,16 +75,14 @@ class a2_home_portfolio extends WP_Widget {
 						);
 						$portfolio_list_posts = new WP_Query( $portfolio_list_args );
 
-						while( $portfolio_list_posts->have_posts() ) : $portfolio_list_posts->the_post() ?>
+						?>
 
-							<div class="project portfolio-item-wrap block-post" data-id="post-<?php the_ID(); ?>" <?php echo 'data-type="'. strip_tags( get_the_term_list( get_the_ID(), 'categories', '', ' ', '' ) ) .'"'; ?>>
-								<div class="portfolio-item">
-									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'portfolio-image' ); ?></a>
-									<h4><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
-								</div>
-							</div>
+						<?php while( $portfolio_list_posts->have_posts() ) : $portfolio_list_posts->the_post() ?>
+
+							<?php get_template_part( 'summary-array-portfolio' ); ?>
 
 						<?php endwhile; ?>
+
 					</div><!-- filter posts -->
 				</div><!-- content -->
 
