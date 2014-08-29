@@ -10,20 +10,20 @@ class A2Portfolio {
   public function register_a2_tax_service_type() {
 
     $labels = array(
-      'name'                       => _x( 'Services', 'Taxonomy General Name', 'a2_radius_child' ),
-      'singular_name'              => _x( 'Service', 'Taxonomy Singular Name', 'a2_radius_child' ),
-      'all_items'                  => __( 'All Services', 'a2_radius_child' ),
-      'parent_item'                => __( 'Service Parent Item', 'a2_radius_child' ),
-      'parent_item_colon'          => __( 'Service Parent Item:', 'a2_radius_child' ),
-      'new_item_name'              => __( 'New Service Name', 'a2_radius_child' ),
-      'add_new_item'               => __( 'Add New Service', 'a2_radius_child' ),
-      'edit_item'                  => __( 'Edit Service', 'a2_radius_child' ),
-      'update_item'                => __( 'Update Service', 'a2_radius_child' ),
-      'separate_items_with_commas' => __( 'Separate services with commas', 'a2_radius_child' ),
-      'search_items'               => __( 'Search Service', 'a2_radius_child' ),
-      'add_or_remove_items'        => __( 'Add or remove services', 'a2_radius_child' ),
-      'choose_from_most_used'      => __( 'Choose from the most used services', 'a2_radius_child' ),
-      'not_found'                  => __( 'Not Found', 'a2_radius_child' ),
+      'name'                       => _x( 'Services', 'Taxonomy General Name', 'radius' ),
+      'singular_name'              => _x( 'Service', 'Taxonomy Singular Name', 'radius' ),
+      'all_items'                  => __( 'All Services', 'radius' ),
+      'parent_item'                => __( 'Service Parent Item', 'radius' ),
+      'parent_item_colon'          => __( 'Service Parent Item:', 'radius' ),
+      'new_item_name'              => __( 'New Service Name', 'radius' ),
+      'add_new_item'               => __( 'Add New Service', 'radius' ),
+      'edit_item'                  => __( 'Edit Service', 'radius' ),
+      'update_item'                => __( 'Update Service', 'radius' ),
+      'separate_items_with_commas' => __( 'Separate services with commas', 'radius' ),
+      'search_items'               => __( 'Search Service', 'radius' ),
+      'add_or_remove_items'        => __( 'Add or remove services', 'radius' ),
+      'choose_from_most_used'      => __( 'Choose from the most used services', 'radius' ),
+      'not_found'                  => __( 'Not Found', 'radius' ),
     );
     $args = array(
       'labels'                     => $labels,
@@ -34,7 +34,7 @@ class A2Portfolio {
       'show_in_nav_menus'          => true,
       'show_tagcloud'              => true,
       'query_var'                  => true,
-      'rewrite'                     => array('slug' => _x('service', 'Service slug', 'a2_radius_child')),
+      'rewrite'                     => array('slug' => _x('service', 'Service slug', 'radius')),
     );
     register_taxonomy('a2-service', array( 'array-portfolio' ), $args );
   }
@@ -49,7 +49,7 @@ class A2Portfolio {
       	'fields' => array (
           array (
         		'key' => 'field_53fa3cb1372fd',
-        		'label' => __('Timeframe/Time', 'a2_radius_child'),
+        		'label' => __('Timeframe/Time', 'radius'),
         		'name' => 'timeframe',
         		'prefix' => '',
         		'type' => 'text',
@@ -66,7 +66,7 @@ class A2Portfolio {
         	),
       		array (
       			'key' => 'field_53f4f6f496f09',
-      			'label' => __('Type of image', 'a2_radius_child'),
+      			'label' => __('Type of image', 'radius'),
       			'name' => 'image_type',
       			'prefix' => '',
       			'type' => 'radio',
@@ -84,7 +84,7 @@ class A2Portfolio {
       		),
       		array (
       			'key' => 'field_53f4f71d96f0a',
-      			'label' => __('Image', 'a2_radius_child'),
+      			'label' => __('Image', 'radius'),
       			'name' => 'image',
       			'prefix' => '',
       			'type' => 'image',

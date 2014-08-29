@@ -9,24 +9,24 @@ class A2Employees {
 
   public function register_post_type_a2_employee() {
     	$labels = array(
-    		'name'                => _x( 'Employees', 'Post Type General Name', 'a2_radius_child' ),
-    		'singular_name'       => _x( 'Employee', 'Post Type Singular Name', 'a2_radius_child' ),
-    		'menu_name'           => __( 'Employee', 'a2_radius_child' ),
-        'parent_item'         => __( 'Employee Parent Item', 'a2_radius_child' ),
-    		'parent_item_colon'   => __( 'Employee Parent Item:', 'a2_radius_child' ),
-    		'all_items'           => __( 'All Employees', 'a2_radius_child' ),
-    		'view_item'           => __( 'View Employee', 'a2_radius_child' ),
-    		'add_new_item'        => __( 'Add New Employee', 'a2_radius_child' ),
-    		'add_new'             => __( 'Add New', 'a2_radius_child' ),
-    		'edit_item'           => __( 'Edit Employee', 'a2_radius_child' ),
-    		'update_item'         => __( 'Update Employee', 'a2_radius_child' ),
-    		'search_items'        => __( 'Search Employee', 'a2_radius_child' ),
-    		'not_found'           => __( 'Not found', 'a2_radius_child' ),
-    		'not_found_in_trash'  => __( 'Not found in Trash', 'a2_radius_child' ),
+    		'name'                => _x( 'Employees', 'Post Type General Name', 'radius' ),
+    		'singular_name'       => _x( 'Employee', 'Post Type Singular Name', 'radius' ),
+    		'menu_name'           => __( 'Employee', 'radius' ),
+        'parent_item'         => __( 'Employee Parent Item', 'radius' ),
+    		'parent_item_colon'   => __( 'Employee Parent Item:', 'radius' ),
+    		'all_items'           => __( 'All Employees', 'radius' ),
+    		'view_item'           => __( 'View Employee', 'radius' ),
+    		'add_new_item'        => __( 'Add New Employee', 'radius' ),
+    		'add_new'             => __( 'Add New', 'radius' ),
+    		'edit_item'           => __( 'Edit Employee', 'radius' ),
+    		'update_item'         => __( 'Update Employee', 'radius' ),
+    		'search_items'        => __( 'Search Employee', 'radius' ),
+    		'not_found'           => __( 'Not found', 'radius' ),
+    		'not_found_in_trash'  => __( 'Not found in Trash', 'radius' ),
     	);
     	$args = array(
-    		'label'               => __( 'a2-employee', 'a2_radius_child' ),
-    		'description'         => __( 'A2 Employees', 'a2_radius_child' ),
+    		'label'               => __( 'a2-employee', 'radius' ),
+    		'description'         => __( 'A2 Employees', 'radius' ),
     		'labels'              => $labels,
     		'supports'            => array( 'title', 'custom-fields', ),
     		'hierarchical'        => false,
@@ -41,7 +41,7 @@ class A2Employees {
     		'exclude_from_search' => false,
     		'publicly_queryable'  => true,
     		'capability_type'     => 'page',
-        'rewrite'             => array('slug' => _x('employee', 'Employee slug', 'a2_radius_child')),
+        'rewrite'             => array('slug' => _x('employee', 'Employee slug', 'radius')),
     	);
     	register_post_type( 'a2-employee', $args );
   }
@@ -49,8 +49,8 @@ class A2Employees {
   public function register_a2_tax_employee_skill() {
 
     $labels = array(
-      'name'          => _x( 'Skills', 'Skills General Name', 'a2_radius_child' ),
-      'singular_name' => _x( 'Skill', 'Skills Singular Name', 'a2_radius_child' ),
+      'name'          => _x( 'Skills', 'Skills General Name', 'radius' ),
+      'singular_name' => _x( 'Skill', 'Skills Singular Name', 'radius' ),
     );
 
     $args = array(
@@ -62,7 +62,7 @@ class A2Employees {
       'show_in_nav_menus'   => true,
       'show_tagcloud'       => true,
       'query_var'           => true,
-      'rewrite'             => array('slug' => _x('skills', 'Skills slug', 'a2_radius_child')),
+      'rewrite'             => array('slug' => _x('skills', 'Skills slug', 'radius')),
     );
 
     register_taxonomy( 'a2-employee-skill', array('a2-employee'), $args);
@@ -73,11 +73,11 @@ class A2Employees {
     {
       register_field_group(array (
       	'key' => 'group_53ea424d8b345',
-      	'title' => __('Employee', 'a2_radius_child'),
+      	'title' => __('Employee', 'radius'),
       	'fields' => array (
       		array (
       			'key' => 'field_53ea428b42c2b',
-      			'label' => __('Photo', 'a2_radius_child'),
+      			'label' => __('Photo', 'radius'),
       			'name' => 'photo',
       			'prefix' => '',
       			'type' => 'image',
@@ -90,7 +90,7 @@ class A2Employees {
       		),
       		array (
       			'key' => 'field_53ea44ca1c1dc',
-      			'label' => __('Phone', 'a2_radius_child'),
+      			'label' => __('Phone', 'radius'),
       			'name' => 'phone',
       			'prefix' => '',
       			'type' => 'text',
@@ -107,7 +107,7 @@ class A2Employees {
       		),
       		array (
       			'key' => 'field_53ea44d71c1dd',
-      			'label' => __('E-mail', 'a2_radius_child'),
+      			'label' => __('E-mail', 'radius'),
       			'name' => 'email',
       			'prefix' => '',
       			'type' => 'email',
@@ -121,7 +121,7 @@ class A2Employees {
       		),
       		array (
       			'key' => 'field_53ea44f41c1de',
-      			'label' => __('Links', 'a2_radius_child'),
+      			'label' => __('Links', 'radius'),
       			'name' => 'links',
       			'prefix' => '',
       			'type' => 'repeater',
@@ -131,11 +131,11 @@ class A2Employees {
       			'min' => '',
       			'max' => '',
       			'layout' => 'table',
-      			'button_label' => __('Add Row', 'a2_radius_child'),
+      			'button_label' => __('Add Row', 'radius'),
       			'sub_fields' => array (
       				array (
       					'key' => 'field_53ea45121c1df',
-      					'label' => __('Tag', 'a2_radius_child'),
+      					'label' => __('Tag', 'radius'),
       					'name' => 'tag',
       					'prefix' => '',
       					'type' => 'text',
@@ -153,7 +153,7 @@ class A2Employees {
       				),
       				array (
       					'key' => 'field_53ea45401c1e0',
-      					'label' => __('URL', 'a2_radius_child'),
+      					'label' => __('URL', 'radius'),
       					'name' => 'url',
       					'prefix' => '',
       					'type' => 'text',
@@ -173,7 +173,7 @@ class A2Employees {
       		),
       		array (
       			'key' => 'field_53ea45631c1e1',
-      			'label' => __('Bio', 'a2_radius_child'),
+      			'label' => __('Bio', 'radius'),
       			'name' => 'bio',
       			'prefix' => '',
       			'type' => 'wysiwyg',
