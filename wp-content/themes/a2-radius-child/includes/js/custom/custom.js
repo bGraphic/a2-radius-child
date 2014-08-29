@@ -74,12 +74,13 @@ jQuery(document).ready(function( $ ) {
     //Service Box Sizing
     $(window).resize( function() {
         var $column = $('.column-wrap'),
-            maxHeight = 0;
+            maxHeight = 0,
+						numColumns = 2;
 
         $column.each( function(index, value) {
 
-            if(index % 3 == 0 && index > 0) {
-              $column.slice(index-3, index).height(maxHeight);
+            if(index % numColumns == 0 && index > 0) {
+              $column.slice(index-numColumns, index).height(maxHeight);
               maxHeight = 0;
             }
 
@@ -91,7 +92,7 @@ jQuery(document).ready(function( $ ) {
 
         var lastIndex = $column.length-1;
 
-        $column.slice(lastIndex - lastIndex % 3).height(maxHeight);
+        $column.slice(lastIndex - lastIndex % numColumns).height(maxHeight);
 
     }).trigger('resize');
 
