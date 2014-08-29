@@ -1,0 +1,403 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: A2 Array Toolkit v1.0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-08-29 08:43:10+0000\n"
+"Last-Translator: raae <raae@bgraphic.no>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Norwegian (Bokmål)\n"
+"X-Poedit-Country: NORWAY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: includes/admin/admin.php:39
+#, php-format
+#@ array-toolkit
+msgid "You have successfully activated the Array Toolkit. Read the <a href=\"%1$s\">help file</a> to learn more."
+msgstr ""
+
+#: includes/gallery/gallery.php:84
+#@ array-toolkit
+msgid "Featured Gallery"
+msgstr ""
+
+#: includes/gallery/gallery.php:107
+#@ array-toolkit
+msgid "Add Gallery"
+msgstr ""
+
+#: includes/lib/metabox/helpers/cmb_Meta_Box_ajax.php:47
+#@ cmb
+msgid "Please Try Again"
+msgstr ""
+
+#: includes/lib/metabox/helpers/cmb_Meta_Box_ajax.php:131
+#@ cmb
+msgid "Remove Embed"
+msgstr ""
+
+#: includes/lib/metabox/helpers/cmb_Meta_Box_ajax.php:134
+#, php-format
+#@ cmb
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:150
+#@ cmb
+msgid "Add Row"
+msgstr ""
+
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:178
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:547
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:590
+#@ cmb
+msgid "Remove"
+msgstr ""
+
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:523
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:563
+#@ cmb
+msgid "Add or Upload File"
+msgstr ""
+
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:536
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:582
+#@ cmb
+msgid "Remove Image"
+msgstr ""
+
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:547
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:590
+#@ cmb
+msgid "File:"
+msgstr ""
+
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:547
+#: includes/lib/metabox/helpers/cmb_Meta_Box_types.php:590
+#@ cmb
+msgid "Download"
+msgstr ""
+
+#: includes/lib/metabox/init.php:243
+#@ default
+msgid "Clear"
+msgstr ""
+
+#: includes/lib/metabox/init.php:244
+#@ default
+msgid "Default"
+msgstr ""
+
+#: includes/lib/metabox/init.php:245
+#@ default
+msgid "Select Color"
+msgstr ""
+
+#: includes/lib/metabox/init.php:246
+#@ default
+msgid "Current Color"
+msgstr ""
+
+#: includes/lib/metabox/init.php:1185
+#@ cmb
+msgid "Save"
+msgstr ""
+
+#: includes/post-types.php:51
+#@ array-toolkit
+msgid "Portfolio Items"
+msgstr "Oppdrag"
+
+#: includes/post-types.php:52
+#@ array-toolkit
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: includes/post-types.php:60
+#@ array-toolkit
+msgctxt "Portfolio item slug"
+msgid "portfolio-item"
+msgstr "oppdrag"
+
+#: includes/post-types.php:78
+#@ array-toolkit
+msgid "Categories"
+msgstr "Marked"
+
+#: includes/post-types.php:80
+#@ array-toolkit
+msgctxt "Portfolio Categories slug"
+msgid "categories"
+msgstr "marked"
+
+#: includes/post-types.php:95
+#@ array-toolkit
+msgid "Slider Items"
+msgstr ""
+
+#: includes/post-types.php:96
+#@ array-toolkit
+msgid "Slide"
+msgstr ""
+
+#: includes/widgets/dribbble/dribbble.php:24
+#@ array-toolkit
+msgid "Display your latest Dribbble shots"
+msgstr ""
+
+#: includes/widgets/dribbble/dribbble.php:31
+#@ array-toolkit
+msgid "Array Dribbble Widget"
+msgstr ""
+
+#: includes/widgets/dribbble/dribbble.php:120
+#: includes/widgets/flickr/flickr.php:112
+#@ array-toolkit
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/dribbble/dribbble.php:126
+#@ array-toolkit
+msgid "Username:"
+msgstr ""
+
+#: includes/widgets/dribbble/dribbble.php:132
+#@ array-toolkit
+msgid "Number of Shots:"
+msgstr ""
+
+#: includes/widgets/flickr/flickr.php:24
+#@ array-toolkit
+msgid "Display your latest Flickr photos"
+msgstr ""
+
+#: includes/widgets/flickr/flickr.php:31
+#@ array-toolkit
+msgid "Array Flickr Widget"
+msgstr ""
+
+#: includes/widgets/flickr/flickr.php:117
+#@ array-toolkit
+msgid "Your Flickr User ID:"
+msgstr ""
+
+#: includes/widgets/flickr/flickr.php:119
+#@ array-toolkit
+msgid "Don't know your ID? Head on over to <a href=\"http://idgettr.com\">idgettr</a> to find it."
+msgstr ""
+
+#: includes/widgets/flickr/flickr.php:123
+#@ array-toolkit
+msgid "Number of Photos:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:25
+#@ array-toolkit
+msgid "Show social icon links"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:33
+#@ array-toolkit
+msgid "Array Social Icons Widget"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:68
+#@ array-toolkit
+msgid "Twitter"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:72
+#@ array-toolkit
+msgid "Dribbble"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:76
+#@ array-toolkit
+msgid "Facebook"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:80
+#@ array-toolkit
+msgid "Vimeo"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:84
+#@ array-toolkit
+msgid "Tumblr"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:88
+#@ array-toolkit
+msgid "LinkedIn"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:92
+#@ array-toolkit
+msgid "Flickr"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:96
+#@ array-toolkit
+msgid "Google"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:100
+#@ array-toolkit
+msgid "RSS Feed"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:104
+#@ array-toolkit
+msgid "YouTube"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:108
+#@ array-toolkit
+msgid "Pinterest"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:112
+#@ array-toolkit
+msgid "Github"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:116
+#@ array-toolkit
+msgid "Instagram"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:120
+#@ array-toolkit
+msgid "WordPress"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:124
+#@ array-toolkit
+msgid "Behance"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:128
+#@ array-toolkit
+msgid "Rdio"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:132
+#@ array-toolkit
+msgid "Spotify"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:173
+#@ array-toolkit
+msgid "Icon Shape"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:175
+#@ array-toolkit
+msgid "Rounded Square"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:176
+#@ array-toolkit
+msgid "Square"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:177
+#@ array-toolkit
+msgid "Circle"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:182
+#@ array-toolkit
+msgid "Twitter Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:187
+#@ array-toolkit
+msgid "Github Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:192
+#@ array-toolkit
+msgid "Instagram Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:197
+#@ array-toolkit
+msgid "Dribbble Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:202
+#@ array-toolkit
+msgid "Facebook Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:207
+#@ array-toolkit
+msgid "Vimeo Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:212
+#@ array-toolkit
+msgid "Tumblr Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:217
+#@ array-toolkit
+msgid "LinkedIn Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:222
+#@ array-toolkit
+msgid "Flickr Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:227
+#@ array-toolkit
+msgid "Google Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:232
+#@ array-toolkit
+msgid "RSS Feed Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:237
+#@ array-toolkit
+msgid "YouTube Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:242
+#@ array-toolkit
+msgid "Pinterest Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:247
+#@ array-toolkit
+msgid "WordPress Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:252
+#@ array-toolkit
+msgid "Behance Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:257
+#@ array-toolkit
+msgid "Rdio Link:"
+msgstr ""
+
+#: includes/widgets/icons/icons.php:262
+#@ array-toolkit
+msgid "Spotify Link:"
+msgstr ""
+

@@ -10,7 +10,7 @@ get_header(); ?>
 			<div class="container-wrap">
 				<div class="container">
 					<div class="portfolio-title-bar">
-						<?php _ex( 'Service', 'Taxonomy archive title', 'a2_radius_child' ); ?> / <?php single_cat_title(); ?></li>
+						<?php echo get_taxonomy(get_query_var( 'taxonomy' ))->labels->singular_name; ?> / <?php single_cat_title(); ?></li>
 					</div>
 
 					<div class="portfolio-full clearfix">

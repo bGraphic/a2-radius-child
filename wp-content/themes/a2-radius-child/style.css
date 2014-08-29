@@ -14,6 +14,14 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
+.logo {
+  max-height: 55px;
+}
+
+.header-left {
+  height: 65px;
+}
+
 .content p, .content ul, .content ol {
   margin-bottom: 10px;
 }
@@ -308,4 +316,10 @@ a:hover .services  {
 .a2-portfolio h4 span.skills {
   text-transform: none;
   font-weight: normal;
+}
+
+/* Text columns */
+
+.section .column-wrap {
+  width: 50%;
 }

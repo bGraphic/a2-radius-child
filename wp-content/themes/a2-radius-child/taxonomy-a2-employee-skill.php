@@ -8,7 +8,7 @@ get_header(); ?>
 					<div class="container">
 
 						<div class="portfolio-title-bar">
-							<?php _ex( 'Skill', 'Taxonomy archive title', 'a2_radius_child' ) ?> / <?php single_cat_title(); ?></li>
+							<?php echo get_taxonomy(get_query_var( 'taxonomy' ))->labels->singular_name; ?> / <?php single_cat_title(); ?></li>
 						</div>
 
 						<div class="a2-portfolio-full clearfix">
