@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: A2 Radius Child v0.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-08-29 07:13:37+0000\n"
+"PO-Revision-Date: 2014-08-29 08:47:09+0000\n"
 "Last-Translator: raae <raae@bgraphic.no>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -313,18 +313,18 @@ msgstr ""
 #@ radius
 msgctxt "Taxonomy General Name"
 msgid "Services"
-msgstr ""
+msgstr "Tjenester"
 
 #: lib/a2-portfolio.php:14
 #@ radius
 msgctxt "Taxonomy Singular Name"
 msgid "Service"
-msgstr ""
+msgstr "Tjeneste"
 
 #: lib/a2-portfolio.php:15
 #@ radius
 msgid "All Services"
-msgstr ""
+msgstr "Alle tjenester"
 
 #: lib/a2-portfolio.php:16
 #@ radius
@@ -385,7 +385,7 @@ msgstr ""
 #@ radius
 msgctxt "Service slug"
 msgid "service"
-msgstr ""
+msgstr "tjeneste"
 
 #: lib/a2-portfolio.php:52
 #@ radius
@@ -445,7 +445,7 @@ msgstr ""
 #@ radius
 msgctxt "Taxonomy archive title"
 msgid "Service"
-msgstr ""
+msgstr "Tjeneste"
 
 #: template-meta.php:15
 #: /Users/raae/Dropbox/bGraphic/PE/a2/wordpress/wp-content/themes/radius/includes/widgets/homepage-portfolio.php:97
