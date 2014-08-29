@@ -1,6 +1,8 @@
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 
+wp-content/plugins/*
+!wp-content/plugins/a2-array-toolkit
 wp-content/themes/radius/
 .htaccess
 
@@ -15,7 +17,7 @@ Thumbs.db
 # wordpress specific
 wp-config.php
 wp-content/uploads/
-wp-content/plugins/
+# wp-content/plugins/
 wp-content/languages/
 wp-content/blogs.dir/
 wp-content/upgrade/*
