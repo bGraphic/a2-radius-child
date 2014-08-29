@@ -317,3 +317,9 @@ a:hover .services  {
   text-transform: none;
   font-weight: normal;
 }
+
+/* Text columns */
+
+.section .column-wrap {
+  width: 50%;
+}
