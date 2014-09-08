@@ -7,7 +7,14 @@ get_header(); ?>
 
 			<!-- Grab the featured image -->
 			<?php if ( has_post_thumbnail() ) { ?>
-				<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'radius' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_post_thumbnail( 'large-image' ); ?></a>
+				<div class="featured-image" href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'radius' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
+					<?php the_post_thumbnail( 'large-image' ); ?>
+					<div class="slogan">
+						<div class="section">
+							<?php echo get_bloginfo( 'description', 'display' ); ?>
+						</div>
+					</div>
+				</div>
 			<?php } ?>
 
 			<div id="sections-wrap">
