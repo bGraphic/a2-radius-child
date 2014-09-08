@@ -74,6 +74,7 @@ get_header(); ?>
 										<?php } ?>
 									</div>
 									<?php wp_link_pages(); ?>
+									<?php get_template_part( 'template-share' ); ?>
 								</div><!-- blog entry -->
 							</div><!-- blog text -->
 

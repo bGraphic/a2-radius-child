@@ -45,6 +45,22 @@
   float: none;
 }
 
+.blog-entry .blog-meta {
+  float: none;
+  width: auto;
+}
+
+.blog-entry .blog-meta ul {
+  list-style: none;
+  width: auto;
+}
+
+.blog-entry .blog-meta ul li {
+  display: inline;
+  width: auto;
+  padding: 0 5px;
+}
+
 .content-portfolio .content {
   margin-bottom: 5%;
 }
