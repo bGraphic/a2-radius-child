@@ -27,6 +27,7 @@ get_header(); ?>
 										<?php the_content( __( 'Read more &rarr;', 'radius' ) ); ?>
 									</div>
 									<?php wp_link_pages(); ?>
+									<?php get_template_part( 'template-share' ); ?>
 								</div><!-- blog entry -->
 							</div><!-- blog text -->
 
