@@ -353,7 +353,7 @@ a:hover .services  {
   .a2-portfolio.a2-employee h4 {
     min-height: 68px;
   }
-  
+
 }
 
 /* Four Column Portfolio */
@@ -371,6 +371,10 @@ a:hover .services  {
 
   .a2-portfolio.a2-employee {
     padding-bottom: 35%;
+  }
+
+  .a2-portfolio.a2-employee h4 {
+    min-height: 68px;
   }
 
 }
