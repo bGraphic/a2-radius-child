@@ -28,14 +28,15 @@
 
 .featured-image .slogan {
   position: absolute;
-  top: 25%;
+  top: 35%;
   text-align: center;
-  color: #F16E4F;
+  color: white;
   font-weight: bold;
   width: 100%;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  text-shadow: 0 1px gray;
   font-size: 180%;
   line-height: 110%;
+  opacity: 0.8;
 }
 
 @media screen and (min-width:700px) {
@@ -48,11 +49,9 @@
 @media screen and (min-width:940px) {
   .featured-image .slogan {
     top: 40%;
-    font-size: 280%;
+    font-size: 250%;
   }
 }
-
-
 
 .content p, .content ul, .content ol {
   margin-bottom: 10px;
