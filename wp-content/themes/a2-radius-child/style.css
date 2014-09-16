@@ -272,8 +272,41 @@ a:hover .services  {
   box-shadow: rgba(0,0,0, 0.1) 0px 0px 3px;
 }
 
+.a2-portfolio h4 {
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  width: 100%;
+}
+
+.a2-portfolio h4 a {
+  color: #666;
+}
+
+.a2-portfolio h4 span {
+  display: block;
+}
+
+.a2-portfolio h4 span.skills {
+  text-transform: none;
+  font-weight: normal;
+}
+
 .a2-portfolio.a2-employee  {
   padding-bottom: 65%;
+}
+
+.a2-portfolio.a2-employee h4 {
+  min-height: 84px;
 }
 
 .a2-portfolio:hover img {
@@ -316,6 +349,11 @@ a:hover .services  {
   .a2-portfolio.a2-employee  {
     padding-bottom: 43%;
   }
+
+  .a2-portfolio.a2-employee h4 {
+    min-height: 68px;
+  }
+  
 }
 
 /* Four Column Portfolio */
@@ -335,35 +373,6 @@ a:hover .services  {
     padding-bottom: 35%;
   }
 
-}
-
-.a2-portfolio h4 {
-  z-index: 5;
-  position: absolute;
-  bottom: 0;
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  margin-bottom: 0;
-  padding: 10px;
-  text-align: center;
-  background: #fff;
-  width: 100%;
-}
-
-.a2-portfolio h4 a {
-  color: #666;
-}
-
-.a2-portfolio h4 span {
-  display: block;
-}
-
-.a2-portfolio h4 span.skills {
-  text-transform: none;
-  font-weight: normal;
 }
 
 /* Text columns */
