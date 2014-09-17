@@ -27,11 +27,11 @@ get_header(); ?>
             <?php endwhile; ?>
             <?php endif; ?>
 
-            <?php if ( have_rows("contact_section") ) : while ( have_rows("contact_section") ) : the_row(); ?>
+            <?php if ( have_rows("contact_sections") ) : while ( have_rows("contact_sections") ) : the_row(); ?>
               <div class="blog-post clearfix">
                 <div class="blog-inside">
                   <div class="page-title">
-                    <h1><?php the_sub_field("contact_section_title"); ?></h1>
+                    <h1><?php the_sub_field("contact_section_heading"); ?></h1>
                   </div>
 
                   <?php foreach( get_sub_field('contact_section_employees') as $post): // variable must be called $post (IMPORTANT) ?>

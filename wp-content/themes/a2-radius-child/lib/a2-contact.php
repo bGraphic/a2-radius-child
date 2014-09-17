@@ -11,12 +11,12 @@ class A2Contact {
 
       register_field_group(array (
       	'key' => 'group_541974eaaa9cb',
-      	'title' => 'Contact Information',
+      	'title' => __('Contact Information', 'radius'),
       	'fields' => array (
       		array (
       			'key' => 'field_54197508ecdfd',
-      			'label' => 'Contact Section',
-      			'name' => 'contact_section',
+      			'label' => __('Contact Sections', 'radius'),
+      			'name' => 'contact_sections',
       			'prefix' => '',
       			'type' => 'repeater',
       			'instructions' => '',
@@ -25,12 +25,12 @@ class A2Contact {
       			'min' => '',
       			'max' => '',
       			'layout' => 'table',
-      			'button_label' => 'Add contact person',
+      			'button_label' => __('Add employee', 'radius'),
       			'sub_fields' => array (
       				array (
       					'key' => 'field_54197526ecdfe',
-      					'label' => 'Overskrift',
-      					'name' => 'contact_section_title',
+      					'label' => __('Heading', 'radius'),
+      					'name' => 'contact_section_heading',
       					'prefix' => '',
       					'type' => 'text',
       					'instructions' => '',
@@ -47,7 +47,7 @@ class A2Contact {
       				),
       				array (
       					'key' => 'field_5419753decdff',
-      					'label' => 'Contact People',
+      					'label' => __('Contact Employees', 'radius'),
       					'name' => 'contact_section_employees',
       					'prefix' => '',
       					'type' => 'post_object',
