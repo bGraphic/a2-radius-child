@@ -61,6 +61,24 @@
   margin-bottom: 5%;
 }
 
+.blog-post .employee .featured-image {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.blog-post .employee {
+  clear: both;
+  margin-top: 3%;
+}
+
+.blog-post .employee h3 {
+  padding-top: 5%;
+}
+
+.blog-post .employee h3 a {
+  color: inherit !important;
+}
+
 .blog-content > :last-child,
 .blog-inside > :last-child {
   margin-bottom: 0;

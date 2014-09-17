@@ -3,6 +3,7 @@
 require( get_stylesheet_directory() . '/includes/widgets/text-column.php' );
 require( get_stylesheet_directory() . '/includes/widgets/homepage-portfolio.php' );
 require( get_stylesheet_directory() . '/lib/a2-employees.php' );
+require( get_stylesheet_directory() . '/lib/a2-contact.php' );
 require( get_stylesheet_directory() . '/lib/a2-portfolio.php' );
 
 require( get_stylesheet_directory() . '/lib/loop-modifications.php' );
@@ -28,7 +29,9 @@ add_action( 'wp_enqueue_scripts', 'a2_scripts_styles' );
 function a2_init() {
   /* Register employee post-type and related taxonomies and custom fields */
   new A2Employees();
-/* Register taxonomies and custom fields for array portfolio */
+  /* Register contact page custon fields */
+  new A2Contact();
+  /* Register taxonomies and custom fields for array portfolio */
   new A2Portfolio();
 }
 add_action( 'init', 'a2_init', 0 );
