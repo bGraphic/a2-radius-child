@@ -26,6 +26,12 @@ get_header(); ?>
 									</div><!-- blog entry -->
 								</div><!-- blog inside -->
 							</div><!-- post -->
+
+							<ul class="portfolio-sidebar-nav">
+								<li class="previous"><?php previous_post_link( '%link', '&#8592; %title')?></li>
+								<li class="next"><?php next_post_link( '%link', '%title &#8594;') ?></li>
+							</ul>
+
 						</div><!-- content -->
 
 						<!-- portfolio meta details -->
@@ -55,10 +61,6 @@ get_header(); ?>
 							    </ul>
 							</div><!-- portfolio meta -->
 
-							<ul class="portfolio-sidebar-nav">
-								<li><?php next_post_link( '%link', __( '<span>Next:</span> %title', 'radius' ) ) ?></li>
-								<li><?php previous_post_link( '%link', __( '<span>Previous:</span> %title', 'radius' ) ) ?></li>
-							</ul>
 						</div><!-- sidebar -->
 
 						<div class="clear"></div>
