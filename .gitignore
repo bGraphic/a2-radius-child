@@ -4,7 +4,6 @@
 wp-content/plugins/*
 !wp-content/plugins/a2-array-toolkit
 wp-content/themes/radius/
-wp-content/themes/a2-radius-child/languages/*.*
 .htaccess
 
 *~
