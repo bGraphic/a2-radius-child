@@ -118,7 +118,7 @@
   margin-bottom: 5%;
 }
 
-.content .portfolio-sidebar-nav {
+.portfolio-sidebar-nav {
   margin-top: 0;
   border: 0;
   padding-top: 0;
@@ -126,18 +126,23 @@
   /*padding: 0 2%;*/
 }
 
-.content ul.portfolio-sidebar-nav li {
+.portfolio-sidebar-nav li {
   display: inline;
   width: 50%;
   float: left;
   padding: 0;
 }
 
-.content ul.portfolio-sidebar-nav li.next {
+.portfolio-sidebar-nav li.next {
   text-align: right;
+  float: right;
 }
 
-.content ul.portfolio-sidebar-nav li:before {
+.content ul.portfolio-sidebar-nav li {
+  padding: 0;
+}
+
+.content .portfolio-sidebar-nav li:before {
   content: "";
 }
 
@@ -289,6 +294,26 @@ a:hover .services  {
     margin: 0 2% 30px 0;
     padding-bottom: 23%;
   }
+}
+
+/* a2-employee */
+
+.single-a2-employee .content {
+  width: 48%;
+}
+
+.single-a2-employee .portfolio-sidebar {
+  width: 48%;
+}
+
+.single-a2-employee .portfolio-sidebar .featured-image {
+  width: 46%;
+  float: left;
+}
+
+.single-a2-employee .portfolio-sidebar .portfolio-meta {
+  width: 46%;
+  float: right;
 }
 
 /* a2-portfolio */
