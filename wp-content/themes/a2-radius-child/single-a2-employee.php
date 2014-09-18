@@ -36,11 +36,6 @@ get_header(); ?>
 								</div><!-- blog inside -->
 							</div><!-- post -->
 
-							<ul class="portfolio-sidebar-nav">
-								<li class="previous"><?php previous_post_link( '%link', '&#8592; %title')?></li>
-								<li class="next"><?php next_post_link( '%link', '%title &#8594;') ?></li>
-							</ul>
-
 						</div><!-- content -->
 
 						<!-- portfolio meta details -->
@@ -77,6 +72,11 @@ get_header(); ?>
 
 						<?php endwhile; ?>
 						<?php endif; ?>
+
+						<!-- <ul class="portfolio-sidebar-nav">
+							<li class="previous"><?php previous_post_link( '%link', '&#8592; %title')?></li>
+							<li class="next"><?php next_post_link( '%link', '%title &#8594;') ?></li>
+						</ul> -->
 
 					</div><!-- container -->
 

@@ -316,6 +316,31 @@ a:hover .services  {
   float: right;
 }
 
+@media only screen and (max-width: 939px) {
+
+  .single-a2-employee .content {
+    width: 73%;
+  }
+
+  .single-a2-employee .portfolio-sidebar {
+    width: 23%;
+  }
+
+  .single-a2-employee .portfolio-sidebar .portfolio-meta,
+  .single-a2-employee .portfolio-sidebar .featured-image {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .single-a2-employee .content,
+  .single-a2-employee .portfolio-sidebar {
+    width: 100%;
+    float: none;
+  }
+}
+
 /* a2-portfolio */
 
 .meta-list i.fa {
