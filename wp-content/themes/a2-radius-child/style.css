@@ -79,6 +79,10 @@
   color: inherit !important;
 }
 
+.blog-post .employee ul li:before {
+  content: "";
+}
+
 .blog-content > :last-child,
 .blog-inside > :last-child {
   margin-bottom: 0;
@@ -426,4 +430,25 @@ a:hover .services  {
 
 .section .column-wrap {
   width: 50%;
+}
+
+/* Footer */
+
+.footer-text-left,
+.footer-text-right,
+.footer-text-left ul {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text-left ul li {
+  float: none;
+}
+
+@media only screen and (max-width: 680px) {
+  .footer-text-left,
+  .footer-text-right,
+  .footer-text-left ul {
+    text-align: left;
+  }
 }
