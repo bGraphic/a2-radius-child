@@ -79,6 +79,10 @@
   color: inherit !important;
 }
 
+.blog-post .employee ul li:before {
+  content: "";
+}
+
 .blog-content > :last-child,
 .blog-inside > :last-child {
   margin-bottom: 0;
