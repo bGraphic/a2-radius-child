@@ -79,7 +79,21 @@
   color: inherit !important;
 }
 
-.blog-post .employee ul li:before {
+.blog-post .portfolio-meta {
+  margin-top: 5%;
+}
+
+.page-template-contact-php .blog-post .portfolio-meta {
+  float: left;
+  
+}
+
+.blog-post .portfolio-meta h3 {
+  border: none;
+  padding: 0;
+}
+
+.blog-post .portfolio-meta ul li:before {
   content: "";
 }
 
@@ -298,7 +312,7 @@ a:hover .services  {
 
 /* a2-employee */
 
-.single-a2-employee .content {
+/*.single-a2-employee .content {
   width: 48%;
 }
 
@@ -339,7 +353,7 @@ a:hover .services  {
     width: 100%;
     float: none;
   }
-}
+}*/
 
 /* a2-portfolio */
 

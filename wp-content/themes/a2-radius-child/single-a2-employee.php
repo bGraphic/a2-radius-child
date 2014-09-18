@@ -31,10 +31,31 @@ get_header(); ?>
 												</ul>
 											<?php endif; ?>
 
+											<div class="portfolio-meta">
+
+												<h3><?php _e( 'Contact Information', 'radius' ); ?></h3>
+
+												<ul class="portfolio-meta-links">
+													<?php
+														if( get_field('phone') ): ?>
+														<li><span class="meta-list"><i class="fa fa-phone"></i> <?php the_field('phone') ?></span></li>
+													<?php endif; ?>
+													<?php
+														if( get_field('email') ): ?>
+														<li><span class="meta-list"><i class="fa fa-envelope"></i> <?php the_field('email') ?></span></li>
+													<?php endif; ?>
+												</ul>
+											</div><!-- portfolio meta -->
+
 										</div><!-- blog content -->
 									</div><!-- blog entry -->
 								</div><!-- blog inside -->
 							</div><!-- post -->
+
+							<ul class="portfolio-sidebar-nav">
+								<li class="previous"><?php previous_post_link( '%link', '&#8592; %title')?></li>
+								<li class="next"><?php next_post_link( '%link', '%title &#8594;') ?></li>
+							</ul>
 
 						</div><!-- content -->
 
@@ -52,31 +73,12 @@ get_header(); ?>
 
 							<?php endif; ?>
 
-							<div class="portfolio-meta">
-								<h3><?php _e( 'Contact Information', 'radius' ); ?></h3>
-								<ul class="portfolio-meta-links">
-									<?php
-										if( get_field('phone') ): ?>
-										<li><span class="meta-list"><i class="fa fa-phone"></i> <?php the_field('phone') ?></span></li>
-									<?php endif; ?>
-									<?php
-										if( get_field('email') ): ?>
-										<li><span class="meta-list"><i class="fa fa-envelope"></i> <?php the_field('email') ?></span></li>
-									<?php endif; ?>
-							  </ul>
-							</div><!-- portfolio meta -->
-
 						</div><!-- sidebar -->
 
 						<div class="clear"></div>
 
 						<?php endwhile; ?>
 						<?php endif; ?>
-
-						<!-- <ul class="portfolio-sidebar-nav">
-							<li class="previous"><?php previous_post_link( '%link', '&#8592; %title')?></li>
-							<li class="next"><?php next_post_link( '%link', '%title &#8594;') ?></li>
-						</ul> -->
 
 					</div><!-- container -->
 

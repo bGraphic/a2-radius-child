@@ -52,22 +52,23 @@ get_header(); ?>
 
                         <?php endif; ?>
 
-                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                          <?php the_title(); ?>
-                        </a></h3>
-                        <ul class="portfolio-meta-links">
-                          <?php
-                            if( get_field('phone') ): ?>
-                            <li><span class="meta-list"><i class="fa fa-phone"></i> <?php the_field('phone') ?></span></li>
-                          <?php endif; ?>
-                          <?php
-                            if( get_field('email') ): ?>
-                            <li><span class="meta-list"><i class="fa fa-envelope"></i> <?php the_field('email') ?></span></li>
-                          <?php endif; ?>
-                          <!-- <li>
-                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php printf( __( 'More information about %s', 'radius' ), get_the_title()); ?></a>
-                          </li> -->
-                        </ul>
+                        <div class="portfolio-meta">
+
+                          <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                            <?php the_title(); ?>
+                          </a></h3>
+
+                          <ul class="portfolio-meta-links">
+                            <?php
+                              if( get_field('phone') ): ?>
+                              <li><span class="meta-list"><i class="fa fa-phone"></i> <?php the_field('phone') ?></span></li>
+                            <?php endif; ?>
+                            <?php
+                              if( get_field('email') ): ?>
+                              <li><span class="meta-list"><i class="fa fa-envelope"></i> <?php the_field('email') ?></span></li>
+                            <?php endif; ?>
+                          </ul>
+                        </div><!-- portfolio meta -->
 
                       </div>
 
