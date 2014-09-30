@@ -5,7 +5,7 @@
  Author:       Benedicte Raae & Guri Sogn Andersen
  Author URI:   http://bgraphic.no
  Template:     radius
- Version:      0.4.0
+ Version:      0.4.1
  Text Domain:  radius
 */
 
@@ -13,6 +13,16 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
+.nav-top .external a:after {
+  content: "\00a0\f08e";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .header-left .logo {
   max-height: 55px;
@@ -85,7 +95,7 @@
 
 .page-template-contact-php .blog-post .portfolio-meta {
   float: left;
-  
+
 }
 
 .blog-post .portfolio-meta h3 {
