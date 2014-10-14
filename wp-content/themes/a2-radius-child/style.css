@@ -14,7 +14,7 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
-.nav-top .external a:after {
+.nav-top .external a::after {
   content: "\00a0\f08e";
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome; // shortening font declaration
