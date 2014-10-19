@@ -49,7 +49,14 @@
   opacity: 0.8;
 }
 
-@media screen and (min-width:700px) {
+@media screen and (max-width:680px) {
+  .featured-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width:681px) {
+
   .featured-image .slogan {
     top: 40%;
     font-size: 200%;
