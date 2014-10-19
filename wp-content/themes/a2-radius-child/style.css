@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (min-width:940px) {
+@media screen and (min-width:941px) {
   .featured-image .slogan {
     top: 40%;
     font-size: 250%;
@@ -301,81 +301,6 @@ a:hover .services  {
   box-shadow: inset -20px -100px 80px -70px rgba(0, 0, 0, .10);
 }
 
-/* Three Column Portfolio */
-@media screen and (min-width:700px) {
-  /* body added to override */
-
-  body .portfolio-full {
-    margin-right: -2.5%;
-  }
-
-  body .block-post {
-    width: 31%;
-    margin: 0 2.2% 30px 0;
-    padding-bottom: 31%;
-  }
-}
-
-/* Four Column Portfolio */
-@media screen and (min-width:940px) {
-  /* body added to override */
-
-  body .portfolio-full {
-    margin-right: -1.9%;
-  }
-
-  body .block-post {
-    width: 23%;
-    margin: 0 2% 30px 0;
-    padding-bottom: 23%;
-  }
-}
-
-/* a2-employee */
-
-/*.single-a2-employee .content {
-  width: 48%;
-}
-
-.single-a2-employee .portfolio-sidebar {
-  width: 48%;
-}
-
-.single-a2-employee .portfolio-sidebar .featured-image {
-  width: 46%;
-  float: left;
-}
-
-.single-a2-employee .portfolio-sidebar .portfolio-meta {
-  width: 46%;
-  float: right;
-}
-
-@media only screen and (max-width: 939px) {
-
-  .single-a2-employee .content {
-    width: 73%;
-  }
-
-  .single-a2-employee .portfolio-sidebar {
-    width: 23%;
-  }
-
-  .single-a2-employee .portfolio-sidebar .portfolio-meta,
-  .single-a2-employee .portfolio-sidebar .featured-image {
-    width: 100%;
-    float: none;
-  }
-}
-
-@media only screen and (max-width: 680px) {
-  .single-a2-employee .content,
-  .single-a2-employee .portfolio-sidebar {
-    width: 100%;
-    float: none;
-  }
-}*/
-
 /* a2-portfolio */
 
 .meta-list i.fa {
@@ -383,17 +308,16 @@ a:hover .services  {
 }
 
 .a2-portfolio-full {
-  margin-right: -2.3%;
   position: relative;
 }
 
 .a2-portfolio {
   position: relative;
   float: left;
-  width: 48%;
+  width: 100%;
   margin: 0 2% 30px 0;
   background: #fff;
-  padding-bottom: 48%;
+  padding-bottom: 80%;
   overflow: hidden;
 
   -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 3px;
@@ -431,11 +355,11 @@ a:hover .services  {
 }
 
 .a2-portfolio.a2-employee  {
-  padding-bottom: 65%;
+  padding-bottom: 140%;
 }
 
 .a2-portfolio.a2-employee h4 {
-  min-height: 84px;
+  /*min-height: 84px;*/
 }
 
 .a2-portfolio:hover img {
@@ -465,11 +389,31 @@ a:hover .services  {
   background: #fff;
 }
 
-/* Three Column Portfolio */
-@media screen and (min-width:700px) {
-
+@media screen and (min-width:481px) {
   .a2-portfolio-full {
     margin-right: -2.5%;
+  }
+
+  .a2-portfolio {
+    width: 48%;
+    margin: 0 2% 30px 0;
+    padding-bottom: 48%;
+  }
+
+  .a2-portfolio.a2-employee  {
+    padding-bottom: 65%;
+  }
+
+  .a2-portfolio.a2-employee h4 {
+    min-height: 84px;
+  }
+}
+
+/* Three Column Portfolio */
+@media screen and (min-width:681px) {
+
+  .a2-portfolio-full {
+    margin-right: -2.3%;
   }
 
   .a2-portfolio {
@@ -489,7 +433,7 @@ a:hover .services  {
 }
 
 /* Four Column Portfolio */
-@media screen and (min-width:940px) {
+@media screen and (min-width:941px) {
 
   .a2-portfolio-full {
     margin-right: -1.9%;
@@ -530,7 +474,7 @@ a:hover .services  {
   float: none;
 }
 
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 680px) {
   .footer-text-left,
   .footer-text-right,
   .footer-text-left ul {
@@ -538,7 +482,7 @@ a:hover .services  {
   }
 }
 
-@media only screen and (max-width: 939px) {
+@media only screen and (max-width: 940px) {
   .alignleft,
   .alignright {
     float: none;
