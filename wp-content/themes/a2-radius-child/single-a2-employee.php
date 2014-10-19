@@ -53,8 +53,8 @@ get_header(); ?>
 							</div><!-- post -->
 
 							<ul class="portfolio-sidebar-nav">
-								<li class="previous"><?php previous_post_link( '%link', '&#8592; %title')?></li>
-								<li class="next"><?php next_post_link( '%link', '%title &#8594;') ?></li>
+								<li class="previous"><?php next_post_link( '%link', '&#8592; %title')?></li>
+								<li class="next"><?php previous_post_link( '%link', '%title &#8594;') ?></li>
 							</ul>
 
 						</div><!-- content -->
