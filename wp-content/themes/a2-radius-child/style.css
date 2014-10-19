@@ -93,6 +93,10 @@
   margin-top: 5%;
 }
 
+.blog-post .post-share {
+  clear: both;
+}
+
 .page-template-contact-php .blog-post .portfolio-meta {
   float: left;
 
@@ -519,10 +523,18 @@ a:hover .services  {
   float: none;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 699px) {
   .footer-text-left,
   .footer-text-right,
   .footer-text-left ul {
     text-align: left;
+  }
+}
+
+@media only screen and (max-width: 939px) {
+  .alignleft,
+  .alignright {
+    float: none;
+    display: block;
   }
 }
