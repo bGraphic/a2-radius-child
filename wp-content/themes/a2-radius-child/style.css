@@ -40,10 +40,10 @@
   position: absolute;
   top: 35%;
   text-align: center;
-  color: #0F4076;
+  color: white;
   font-weight: bold;
   width: 100%;
-  text-shadow: 0 1px white;
+  text-shadow: 0 1px gray;
   font-size: 180%;
   line-height: 110%;
   opacity: 0.8;
