@@ -71,7 +71,11 @@ class a2_home_portfolio extends WP_Widget {
 						$portfolio_list_args = array(
 							'posts_per_page' => $portfolio_item_count,
 							'post_type'      => 'array-portfolio',
-							'meta_query' => array(array('key' => '_thumbnail_id'))
+							'meta_query' => array(
+								'relation' => 'AND',
+								array('key' => 'image', 'compare' => 'EXISTS'),
+								array('key' => 'image', 'value'=>'', 'compare' => '!=')
+								)
 						);
 						$portfolio_list_posts = new WP_Query( $portfolio_list_args );
 
