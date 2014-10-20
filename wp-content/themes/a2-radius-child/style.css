@@ -474,11 +474,49 @@ a:hover .services  {
   float: none;
 }
 
+.desktop .nav-top ul > li {
+  min-height: 0;
+  border: none;
+}
+
+.desktop .nav-top ul {
+  border: none;
+}
+
+.desktop #nav > .current-menu-item, .desktop #nav > li:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 @media only screen and (max-width: 680px) {
   .footer-text-left,
   .footer-text-right,
   .footer-text-left ul {
     text-align: left;
+  }
+
+  .nav-top ul li a {
+    padding: 5px 29px;
+  }
+}
+
+@media only screen and (min-width: 941px) {
+  .desktop .nav-top ul > li {
+  	min-height: 65px;
+  	border-right: solid 1px rgba(255, 255, 255, .05);
+  	border-left: solid 1px rgba(0, 0, 0, .15);
+  }
+
+  .desktop .nav-top ul {
+  	border-left: solid 1px rgba(255, 255, 255, .05);
+  	border-right: solid 1px rgba(0, 0, 0, .15);
+  }
+
+  .desktop #nav > .current-menu-item, .desktop #nav > li:hover {
+  	-webkit-box-shadow: inset -20px -100px 80px -70px rgba(0, 0, 0, .10);
+  	-moz-box-shadow: inset -20px -100px 80px -70px rgba(0, 0, 0, .10);
+  	box-shadow: inset -20px -100px 80px -70px rgba(0, 0, 0, .10);
   }
 }
 
@@ -487,5 +525,142 @@ a:hover .services  {
   .alignright {
     float: none;
     display: block;
+  }
+
+  .header-right {
+    padding: 0 0 0 0;
+    margin: 0 -20px 0 -20px;
+    display: none;
+  }
+
+  .header-toggles {
+    float: right;
+    display: block;
+  }
+
+  .desktop .nav-top .nav-dash-toggle {
+    display: none !important;
+  }
+
+  .desktop .nav-top ul {
+    background: #90979F;
+    border: none;
+  }
+
+  .desktop .nav-top ul a,
+  .desktop .nav-top ul li ul a {
+    color: #CAD1D8;
+    padding: 5px 20px;
+    width: 100%;
+    font-size: 12px !important;
+  }
+
+  .desktop .nav-top ul li:hover {
+    background: #9BA2AA !important;
+  }
+
+  .desktop .nav-top ul a {
+    padding: 5px 9px;
+  }
+
+  .desktop .nav-top ul a:hover {
+    color: #fff !important;
+    background: #9BA2AA !important;
+  }
+
+  .desktop .nav-top ul li {
+    float: left;
+    height: auto;
+    width: 100%;
+    padding: 0 20px;
+    border-bottom: solid 1px #9BA2AA;
+  }
+
+  .desktop .nav-top ul li ul li a:hover, .nav-top ul > li:hover {
+    background: none;
+    box-shadow: none;
+  }
+
+  .desktop .nav-top ul > li ul li:hover a {
+    background: #9BA2AA;
+  }
+
+  .desktop .nav-top ul > li.current-menu-item {
+    border-bottom: solid 1px #9BA2AA;
+  }
+
+  .desktop .nav-top ul > .current-menu-item > a {
+    color: #fff !important;
+    background: #9BA2AA;
+  }
+
+  .desktop .dash-active {
+    background: #90979F !important;
+  }
+
+  .desktop .nav-top ul > li.current-menu-item:hover {
+    background: none;
+    box-shadow: none;
+  }
+
+  .desktop .nav-top ul ul {
+    display: block;
+    position: relative;
+  }
+
+  .desktop .nav-top ul .sub-menu {
+    border-radius: none;
+    margin-top: 0;
+    padding-left: 15px;
+    background: none;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .desktop .nav-top ul .sub-menu li {
+    background: none;
+    border-top: none;
+    border-bottom: solid 1px #9BA2AA;
+  }
+
+  .desktop .nav-top ul .sub-menu li:first-child {
+    border-top: solid 1px #9BA2AA;
+  }
+
+  .desktop .nav-top ul .sub-menu li a:before {
+    font-family: 'FontAwesome';
+    content: "\f105";
+    font-size: 12px;
+    padding-right: 6px;
+  }
+
+  .desktop .mobile-toggle {
+    display: block;
+    float: right;
+    padding: 0 8px;
+    margin: 16px 0 0 8px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    background: #90979F;
+    cursor: default;
+    z-index: 1;
+    color: #fff;
+  }
+
+  .desktop .mobile-toggle:hover {
+    cursor: pointer;
+    background: #777;
+    color: #fff;
+  }
+
+  .desktop .social-dash-inside {
+    text-align: left;
+    padding: 0;
+  }
+
+  .desktop .social-link a {
+    padding: 0 20px;
+    font-size: 12px;
   }
 }
