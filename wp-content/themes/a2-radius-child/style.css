@@ -555,6 +555,10 @@ a:hover .services  {
     font-size: 12px !important;
   }
 
+  .desktop #nav > .current-menu-item {
+    background: #9BA2AA !important;
+  }
+
   .desktop .nav-top ul li:hover {
     background: #9BA2AA !important;
   }
